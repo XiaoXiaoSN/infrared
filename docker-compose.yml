@@ -15,3 +15,4 @@ services:
       - "25565"
     environment:
       INFRARED_CONFIG_PATH: "/configs"
+      INFRARED_PROMETHEUS_ENABLED: "true"

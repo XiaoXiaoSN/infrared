@@ -32,7 +32,7 @@ type Gateway struct {
 
 func (gateway *Gateway) ListenAndServe(proxies []*Proxy) error {
 	if len(proxies) <= 0 {
-		return errors.New("no proxies in gateway")
+		log.Println("no proxies in gateway")
 	}
 
 	gateway.closed = make(chan bool, len(proxies))
